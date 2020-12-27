@@ -1,0 +1,21 @@
+<h1 class=" d-flex justify-content-center">Acoount Login</h1>
+<form action="/" method="POST">
+    <div class="row d-flex justify-content-center">
+        <div class="col-8 mt-2">
+            <input type="text" aria-label="email" class="form-control" name="email" placeholder="email" value={{email}}>
+        </div>
+        <div class="col-8 mt-2">
+            <input type="text" aria-label="password" class="form-control" name="password" placeholder="password">
+        </div>
+        {{#if errors}}
+
+        <span class="col-8 text-danger" role="alert">
+            {{errors}}
+        </span>
+        {{/if}}
+        <div class="d-flex justify-content-center col-8 mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </div>
+</form>
